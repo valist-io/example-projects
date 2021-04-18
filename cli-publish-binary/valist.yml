@@ -1,0 +1,6 @@
+type: binary
+org: test
+project: binary
+tag: 0.1.6-rc.0
+meta: RELEASE.md
+artifact: dist/hello
