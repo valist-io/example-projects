@@ -8,7 +8,7 @@ In this repository, you can find example projects that implement the Valist SDK,
 
 ## CLI Examples
 
-* Coming Soon
+* [Publishing a Binary Executable](cli-publish-binary/README.md)
 
 ## API Examples
 
