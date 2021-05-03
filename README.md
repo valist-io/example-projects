@@ -4,7 +4,11 @@ In this repository, you can find example projects that implement the Valist SDK,
 
 ## SDK Examples
 
-* [Valist SDK + React + Typescript](valist-sdk-react-typescript/README.md)
+* [Valist SDK + React + Typescript](sdk-react-typescript/README.md)
+  * An example secure software download page
+
+* [Valist SDK + Node.js](sdk-node/README.md)
+  * An example for securely fetching software releases from Valist in a Node.js context
 
 ## CLI Examples
 

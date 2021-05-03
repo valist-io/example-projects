@@ -1,0 +1,13 @@
+{
+  "name": "example-valist-sdk-node",
+  "version": "0.1.0",
+  "description": "An example for pulling versions of software from Valist with the SDK in node.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
