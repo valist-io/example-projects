@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "An example for pulling versions of software from Valist with the SDK in node.js",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@valist/sdk": "^0.3.3"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",

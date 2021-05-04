@@ -17,20 +17,20 @@ npm install
 Once the package is installed, you can import it into your project:
 
 ```typescript
-import Valist from '@valist/sdk';
+const Valist = require('@valist/sdk').default;
 ```
 
 You can then fetch releases from an organization and repository by using a function like the following:
 
 ```typescript
-const getReleases = async () => {
-
-  const valist = new Valist({ web3Provider: 'https://matic-mumbai.chainstacklabs.com' });
+(async () => {
+  const valist = new Valist({ web3Provider: 'https://matic-mumbai.chainstacklabs.com', metaTx: false });
   await valist.connect();
 
   const releases = await valist.getReleasesFromRepo('valist', 'sdk');
-  return releases;
-};
+
+  console.log(releases);
+})();
 ```
 
 Check out [index.js](index.js) for an example!
