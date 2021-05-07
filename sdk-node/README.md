@@ -17,7 +17,7 @@ npm install
 Once the package is installed, you can import it into your project:
 
 ```typescript
-const Valist = require('@valist/sdk').default;
+const Valist = require('@valist/sdk');
 ```
 
 You can then fetch releases from an organization and repository by using a function like the following:

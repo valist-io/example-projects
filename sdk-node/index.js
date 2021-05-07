@@ -1,4 +1,4 @@
-const Valist = require('@valist/sdk').default;
+const Valist = require('@valist/sdk');
 
 (async () => {
   const valist = new Valist({ web3Provider: 'https://matic-mumbai.chainstacklabs.com', metaTx: false });
