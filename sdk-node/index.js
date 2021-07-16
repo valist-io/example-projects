@@ -1,10 +1,14 @@
 const Valist = require('@valist/sdk');
 
 (async () => {
-  const valist = new Valist({ web3Provider: 'https://matic-mumbai.chainstacklabs.com', metaTx: false });
+  const valist = new Valist({ web3Provider: 'https://rpc.valist.io', metaTx: false });
   await valist.connect();
 
-  const releases = await valist.getReleasesFromRepo('valist', 'sdk');
+  const releases = await valist.getReleases('valist', 'sdk');
 
-  console.log(releases);
+  const latest = await valist.getLatestRelease('valist', 'sdk');
+
+  console.log('List of releases', releases);
+
+  console.log('Latest release', latest);
 })();
