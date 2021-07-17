@@ -19,7 +19,7 @@ out: dist/hello
 
 In this case, the project `type` is `binary` -- this tells the CLI to handle this accordingly.
 
-All `binary` projects require an `artifact` field containing the final build.
+All `binary` projects require an `out` field containing the final build.
 
 The `org` is simply the name of the organization associated with the project, and the `repo` field is the name of said project within the `org`.
 
@@ -28,11 +28,11 @@ Tags can only be used once per release for security purposes.
 
 The `meta` field refers a some file containing the metadata associated with the release. This is typically a changelog, or release notes.
 
-Lastly, the `artifact` field contains the path to the actual release file that will be published. In this case, it's pointing to the built `hello world` program.
+Lastly, the `out` field contains the path to the actual release file that will be published. In this case, it's pointing to the built `hello world` program.
 
 ## Usage
 
-To publish an update to this project, simply update the `tag`, add some info to the `meta` file, and make sure that the `artifact` points to the correct file.
+To publish an update to this project, simply update the `tag`, add some info to the `meta` file, and make sure that the `out` points to the correct file.
 
 Then, running the following command will trigger a publish:
 
@@ -40,4 +40,4 @@ Then, running the following command will trigger a publish:
 valist publish
 ```
 
-The Valist CLI will detect the package `type` as `binary` and publish the `artifact` to the corresponding `org`, `repo`, and `tag`, along with the `meta` file.
+The Valist CLI will detect the package `type` as `binary` and publish the `out` to the corresponding `org`, `repo`, and `tag`, along with the `meta` file.
