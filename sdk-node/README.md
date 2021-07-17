@@ -4,11 +4,11 @@ Use this example to create auto-update mechanisms, notification systems, and ins
 
 ## Instructions
 
-To install the Valist SDK, you'll need to use the `--registry` flag, and set it to `https://app.valist.io/api/npm`.
+To install the Valist SDK, you'll need to use the `--registry` flag, and set it to `https://valist.io/api/npm`.
 This will use the Valist NPM registry to pull it from Ethereum and IPFS, and fallback any other NPM packages to the main registry.
 
 ```shell
-npm install @valist/sdk --registry=https://app.valist.io/api/npm
+npm install @valist/sdk --registry=https://valist.io/api/npm
 ```
 
 Once the package is installed, you can import it into your project:
