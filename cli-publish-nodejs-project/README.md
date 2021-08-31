@@ -1,4 +1,4 @@
-# Publishing a GO Project
+# Publishing a NodeJS Project
 
 This project contains a simple `greeter` Javascript program, a `tsconfig.json` with typescript settings, a `package,json` and a `valist.yml` that enables secure publishing of the built binaries.
 
