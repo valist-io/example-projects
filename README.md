@@ -4,23 +4,23 @@ In this repository, you can find example projects that implement the Valist SDK,
 
 ## CLI Examples
 
-* [Publishing a GO Project](cli-publish-binary)
+* [Publishing a GO Project](cli-publish-go-project)
 
   * An example for publishing a GO project from the Valist CLI.
 
-* [Publishing an NPM Package](cli-publish-binary)
+* [Publishing an NPM Package](cli-publish-npm-project)
 
   * An example for publishing an NPM package from the Valist CLI.
 
-* [Publishing a NodeJS Project](cli-publish-binary)
+* [Publishing a NodeJS Project](cli-publish-nodejs-project)
 
   * An example for publishing a NodeJS project from the Valist CLI.
 
-* [Publishing a Rust Project](cli-publish-binary)
+* [Publishing a Rust Project](cli-publish-rust-project)
 
   * An example for publishing a Rust project from the Valist CLI.
 
-* [Publishing a Multi-Platform Build (GOLANG)](cli-publish-binary)
+* [Publishing a Multi-Platform Build (GOLANG)](cli-publish-multi-platform-project)
 
   * An example for publishing a multi-architecture build to various platforms from the Valist CLI.
 
