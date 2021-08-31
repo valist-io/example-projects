@@ -2,7 +2,7 @@
 
 This project contains a simple `greeter` Javascript program, an `.npmignore` specifying files to ignore when packing the NPM package, a `tsconfig.json` with typescript settings, a `package,json` and a `valist.yml` that enables secure publishing of the built binaries.
 
-<!-- This project can be found at [https://app.valist.io/exampleorg/exampleNpm](https://app.valist.io/test/binary) -->
+This project can be found at [https://app.valist.io/acme/npm](https://app.valist.io/test/binary)
 
 ## Configuring the `valist.yml` file
 

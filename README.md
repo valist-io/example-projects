@@ -8,7 +8,7 @@ In this repository, you can find example projects that implement the Valist SDK,
 
   * An example for publishing a GO project from the Valist CLI.
 
-* [Publishing an NPM Package](cli-publish-npm-project)
+* [Publishing an NPM Package](cli-publish-npm-package)
 
   * An example for publishing an NPM package from the Valist CLI.
 

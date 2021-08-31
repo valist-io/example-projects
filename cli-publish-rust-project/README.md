@@ -1,4 +1,4 @@
-# Publishing a GO Project
+# Publishing a Rust Project
 
 This project contains a simple `hello world` Rust program, a `cargo.toml` and a `valist.yml` that enables secure publishing of the built binary.
 
