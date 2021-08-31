@@ -24,6 +24,12 @@ In this repository, you can find example projects that implement the Valist SDK,
 
   * An example for publishing a multi-architecture build to various platforms from the Valist CLI.
 
+## CI/CD Examples
+
+* [Publishing a Valist Project With a Github Action](github-action-publish/)
+
+  * An example of using a Github Action workflow to publish a release on Valist.
+
 ## SDK Examples
 
 * [Valist SDK + React + Typescript](sdk-react-typescript)
@@ -31,12 +37,6 @@ In this repository, you can find example projects that implement the Valist SDK,
 
 * [Valist SDK + Node.js](sdk-node)
   * An example for securely fetching software releases from Valist in a Node.js context
-
-## CI/CD Examples
-
-* [Publishing a Valist Project With a Github Action](github-action-publish/)
-
-  * An example of using a Github Action workflow to publish a release on Valist.
 
 ## API Examples
 

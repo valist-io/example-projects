@@ -2,7 +2,7 @@
 
 This project contains a simple `hello world` Go program and a `valist.yml` that enables secure publishing of the built binary.
 
-This project can be found at [https://app.valist.io/exampleorg/examplego](https://app.valist.io/test/binary)
+<!-- This project can be found at [https://app.valist.io/exampleorg/examplego](https://app.valist.io/test/binary) -->
 
 ## Configuring the `valist.yml` file
 
