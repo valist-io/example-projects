@@ -20,16 +20,16 @@ In this repository, you can find example projects that implement the Valist SDK,
 
   * An example for publishing a Rust project from the Valist CLI.
 
-* [Publishing a Multi-Platform Build (GOLANG)](cli-publish-binary/README.md)
+* [Publishing a Multi-Platform Build (GOLANG)](cli-publish-binary)
 
   * An example for publishing a multi-architecture build to various platforms from the Valist CLI.
 
 ## SDK Examples
 
-* [Valist SDK + React + Typescript](sdk-react-typescript/README.md)
+* [Valist SDK + React + Typescript](sdk-react-typescript)
   * An example secure software download page
 
-* [Valist SDK + Node.js](sdk-node/README.md)
+* [Valist SDK + Node.js](sdk-node)
   * An example for securely fetching software releases from Valist in a Node.js context
 
 ## CI/CD Examples
