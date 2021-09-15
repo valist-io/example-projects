@@ -3,10 +3,10 @@ import Valist from '@valist/sdk';
 
 const getReleases = async () => {
 
-  const valist = new Valist({ web3Provider: 'https://matic-mumbai.chainstacklabs.com' });
+  const valist = new Valist({ web3Provider: 'https://rpc.valist.io' });
   await valist.connect();
 
-  const releases = await valist.getReleasesFromRepo('valist', 'sdk');
+  const releases = await valist.getReleases('valist', 'sdk');
   return releases;
 };
 
