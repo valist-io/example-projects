@@ -1,0 +1,7 @@
+type: node
+org: acme
+repo: nodejs-example
+tag: 0.1.6-rc.1
+install: npm install
+build: npm run build
+out: dist/main.js

@@ -1,6 +1,0 @@
-type: binary
-org: playground
-repo: binary
-tag: 0.0.1
-meta: README.md
-out: dist/hello

@@ -1,0 +1,7 @@
+type: go
+org: acme
+repo: go-example
+tag: 0.1.6-rc.0
+meta: RELEASE.md
+build: go build -o ./dist/hello src/main.go 
+out: dist/hello
