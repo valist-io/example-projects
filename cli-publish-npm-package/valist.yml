@@ -1,6 +1,0 @@
-type: npm
-org: acme-co
-repo: npm-example
-tag: 0.0.1
-install: npm install
-build: npm run build
