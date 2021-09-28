@@ -1,6 +1,6 @@
 type: go
-org: acme
-repo: go
+org: acme-co
+repo: go-example
 tag: 0.0.1
 build: go build -o ./dist/main src/main.go
 out: dist/main
