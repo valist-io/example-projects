@@ -1,5 +1,5 @@
 type: node
-org: acme
+org: acme-co
 repo: nodejs-example
 tag: 0.1.6-rc.1
 install: npm install

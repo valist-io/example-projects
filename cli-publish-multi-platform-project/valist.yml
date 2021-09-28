@@ -1,10 +1,10 @@
 # The project type
 type: go
-org: exampleOrg
-repo: exampleMultiPlatform
+org: acme-co
+repo: multi-platform-example
 tag: 0.0.1
 # The command used for building the project
-build:  make all
+build: make all
 # The project's build/output folder
 out: dist
 # The project's supported os/arch platforms and their corresponding artifacts

@@ -1,6 +1,6 @@
 type: rust
-org: acme
-repo: rust
+org: acme-co
+repo: rust-example
 tag: 0.1.6-rc.0
 out: target/debug
 build: cargo build
