@@ -6,7 +6,9 @@ This project can be found at [https://app.valist.io/acme-co/npm-example](https:/
 
 ## Usage
 
-To publish this project, update the `tag` field. Be sure your `package.json` has the correct name @`org`/`repo`.
+To publish this project, update the `version` field. This will be used as the `tag` for the release.
+
+Be sure your `package.json` has the correct name @`org`/`repo`.
 
 Running the following command in the root of the project will trigger a publish:
 
@@ -18,4 +20,4 @@ valist daemon
 npm publish --registry=http://localhost:9000/api/npm
 ```
 
-This will publish a new version using the `tag` from your `package.json`.
+This will publish a new version using the `version` from your `package.json`.
