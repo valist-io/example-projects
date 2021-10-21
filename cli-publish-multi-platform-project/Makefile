@@ -1,5 +1,7 @@
 SHELL=/bin/bash
 
+all: clean windows linux darwin
+
 windows: 
 	GOOS=windows GOARCH=amd64 go build -o ./dist/windows64 src/main.go
 
@@ -9,4 +11,8 @@ linux:
 darwin: 
 	GOOS=darwin GOARCH=amd64 go build -o ./dist/darwin64 src/main.go
 
-all: windows linux darwin
+clean:
+	rm -rf dist
+
+publish: all
+	valist publish

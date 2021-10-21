@@ -1,7 +1,4 @@
-type: go
-org: acme-co
-repo: go-example
-tag: 0.1.6-rc.0
-meta: RELEASE.md
-build: go build -o ./dist/hello src/main.go 
-out: dist/hello
+name: acme-co/go-example
+tag: 0.1.6-rc.8 
+artifacts:
+  hello: dist/hello
