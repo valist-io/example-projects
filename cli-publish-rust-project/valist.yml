@@ -1,6 +1,4 @@
-type: rust
-org: acme-co
-repo: rust-example
+name: acme-co/rust-example
 tag: 0.1.6-rc.0
-out: target/debug
-build: cargo build
+artifacts:
+  hello: target/release/hello_cargo
