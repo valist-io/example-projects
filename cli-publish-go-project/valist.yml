@@ -1,4 +1,4 @@
 name: acme-co/go-example
-tag: 0.1.6-rc.8 
+tag: 0.1.7
 artifacts:
   hello: dist/hello
