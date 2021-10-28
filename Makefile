@@ -1,20 +1,17 @@
 SHELL=/bin/bash
 
-all: publish-all
+all: build publish
 
-publish-git:
-	cd cli-publish-git-project && valist publish --dryrun
+build-%:
+	cd cli-publish-$*-project && make
 
-publish-go:
-	cd cli-publish-go-project && valist publish --dryrun
+build: build-go build-multi-platform build-rust
 
-publish-multi:
-	cd cli-publish-multi-platform-project && valist publish --dryrun
+publish-%: build
+	cd cli-publish-$*-project && valist publish --dryrun
 
 publish-npm:
 	cd cli-publish-npm-package && npm publish --registry=http://localhost:9000/api/npm
 
-publish-rust:
-	cd cli-publish-rust-project && valist publish --dryrun
+publish: publish-go publish-multi-platform publish-rust
 
-publish-all: publish-go publish-multi publish-rust
