@@ -5,12 +5,16 @@ and the list will always be up-to-date based on what you publish via the dashboa
 
 ## Instructions
 
-To install the Valist SDK, you'll need to use the `--registry` flag, and set it to `https://app.valist.io/api/npm`.
-This will use the Valist NPM registry to pull it from Ethereum and IPFS.
+You can install the SDK by running the following:
 
 ```shell
-npm install @valist/sdk --registry=https://app.valist.io/api/npm
+npm install @valist/sdk
 ```
+
+If you're using the CLI, you'll can install the package using web3 protocols using the `--registry` flag and setting it to `https://localhost:9000/api/npm`.
+
+This will use the Valist NPM registry to pull it from Ethereum and IPFS, and fallback any other NPM packages to the main registry.
+
 
 Once the package is installed, you can import it into your project:
 
