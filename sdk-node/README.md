@@ -8,7 +8,7 @@ To install the Valist SDK, you'll need to use the `--registry` flag, and set it 
 This will use the Valist NPM registry to pull it from Ethereum and IPFS, and fallback any other NPM packages to the main registry.
 
 ```shell
-npm install @valist/sdk --registry=https://valist.io/api/npm
+npm install @valist/sdk
 ```
 
 Once the package is installed, you can import it into your project:
