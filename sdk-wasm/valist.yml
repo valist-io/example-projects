@@ -1,0 +1,7 @@
+name: acme-co/wasm-modules
+tag: 0.0.2
+artifacts:
+  optimized.wat: build/optimized.wat
+  optimized.wasm: build/optimized.wasm
+  untouched.wat: build/untouched.wat
+  untouched.wasm: build/untouched.wasm
