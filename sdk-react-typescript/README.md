@@ -3,6 +3,10 @@
 Use this example to build a secure download page powered by Valist. Simply import and render your releases with the SDK,
 and the list will always be up-to-date based on what you publish via the dashboard, SDK, or CLI.
 
+## Documentation
+
+To find more detailed documentation, please visit https://docs.valist.io
+
 ## Instructions
 
 You can install the SDK by running the following:
@@ -10,11 +14,6 @@ You can install the SDK by running the following:
 ```shell
 npm install @valist/sdk
 ```
-
-If you're using the CLI, you'll can install the package using web3 protocols using the `--registry` flag and setting it to `https://localhost:9000/api/npm`.
-
-This will use the Valist NPM registry to pull it from Ethereum and IPFS, and fallback any other NPM packages to the main registry.
-
 
 Once the package is installed, you can import it into your project:
 

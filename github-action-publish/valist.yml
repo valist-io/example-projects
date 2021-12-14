@@ -1,6 +1,6 @@
 type: go
 org: acme-co
 repo: go-example
-tag: 0.0.1
+tag: 0.0.2
 build: go build -o ./dist/main src/main.go
 out: dist/main

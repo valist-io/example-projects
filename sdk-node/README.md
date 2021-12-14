@@ -2,6 +2,10 @@
 
 Use this example to create auto-update mechanisms, notification systems, and installers by pulling releases from Valist.
 
+## Documentation
+
+To find more detailed documentation, please visit https://docs.valist.io
+
 ## Instructions
 
 You can install the SDK by running the following:
@@ -9,11 +13,6 @@ You can install the SDK by running the following:
 ```shell
 npm install @valist/sdk
 ```
-
-If you're using the CLI, you'll can install the package using web3 protocols using the `--registry` flag and setting it to `https://localhost:9000/api/npm`.
-
-This will use the Valist NPM registry to pull it from Ethereum and IPFS, and fallback any other NPM packages to the main registry.
-
 
 Once the package is installed, you can import it into your project:
 
