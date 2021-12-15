@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@assemblyscript/loader": "^0.19.20",
-    "@valist/sdk": "^0.5.2"
+    "@valist/sdk": "^0.5.2",
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "assemblyscript": "^0.19.20"
