@@ -41,7 +41,9 @@ artifacts:
 In this config:
 
 * The `tag` field is the version tag of the release. This can be any format, but preferably follows [semver](https://semver.org) or [calver](https://calver.org/).
+
   > **Note:** Tags can only be used **once** per release for security purposes.
+
 
 ## Usage
 
@@ -58,4 +60,4 @@ Running the following commands in your project will commit and push triggering a
   git push 
 ```
 
-The Valist CLI inside the Github Action will publish the artifacts to the corresponding `account`, `project`, and `tag`.
+The Valist CLI inside the Github Action will publish the artifacts to the corresponding `name`, and `tag`.
