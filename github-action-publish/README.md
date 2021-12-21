@@ -49,7 +49,7 @@ In this config:
 
 To publish this project, update the `name`, and `tag` fields.
 
-> **Note:** Before publishing you will have to set the `VALIST_SINGER` key on yuor repository. Please refer to [https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
+> **Note:** Before publishing you will have to set the `VALIST_SIGNER` key on yuor repository. Please refer to [https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 
 Running the following commands in your project will commit and push triggering a new publish:
 
