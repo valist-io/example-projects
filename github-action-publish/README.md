@@ -30,39 +30,34 @@ jobs:
 This project uses the following config:
 
 ```yaml
-type: go
-org: acme
-repo: go
+name: acme-co/github-action
 tag: 0.0.1
-build: go build -o ./dist/main src/main.go
-out: dist/main
+artifacts:
+  linux/amd64: dist/linux64
+  darwin/amd64: dist/darwin64
+  windows/amd64: dist/windows64
 ```
 
 In this config:
 
-* The project `type` is `go` -- this tells the CLI to handle the golang build environment accordingly. All `go` projects require an `out` field that corresponds to the directory containing the final build.
-
-  > **Note**: If the project does not export multiple artifacts the `out` path is a direct path to the built artifact. For multi-platform builds with multiple artifacts, please reference [Publishing a Multi-Platform Build (GOLANG)](cli-publish-multi-platofrm-project)
-
-* The `build` field defines the command used for building the project. If not set, the build field for go projects will have the default value `go build .`. Since this GO project is specifying a custom **src** input and **dist** output, we have set the build command to `go build -o ./dist/hello src/main.go`.
-
-* The `org` field is the name of the organization associated with the project, and the `repo` field is the name of the project within that organization.
-
 * The `tag` field is the version tag of the release. This can be any format, but preferably follows [semver](https://semver.org) or [calver](https://calver.org/).
+
   > **Note:** Tags can only be used **once** per release for security purposes.
 
-* The `meta` field refers to any file containing the metadata associated with the release. This is typically a changelog, or release notes.
 
 ## Usage
 
-To publish this project, update the `org`, `repo`, and `tag` fields. You can also add some info to the `meta` file, but be sure the `out` points to the correct file.
+To publish this project, update the `name`, and `tag` fields.
+
+> **Note:** Before publishing you will have to set the `VALIST_SIGNER` key on yuor repository. Please refer to [https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 
 Running the following commands in your project will commit and push triggering a new publish:
 
 ```bash
+  make build
   git add src/main.go valist.yml .github/workflows/example.yml
   git commit -m "Release 0.0.1"
   git push 
 ```
 
-The Valist CLI inside the Github Action will detect the package `type` as `go` and publish the `out` artifact to the corresponding `org`, `repo`, and `tag`.
+The Valist CLI inside the Github Action will publish the artifacts to the corresponding `name`, and `tag`.
