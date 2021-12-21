@@ -1,7 +1,7 @@
 name: Valist publish
 on:
   push:
-    branches: ['main'] # Event triggers on pushes to main
+    branches: ["main"] # Event triggers on pushes to main
 
 jobs:
   Valist: # Define deploy job
@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2 # Make source code of repo available
-      
+
       - name: Valist publish
         uses: valist-io/valist-github-action@main # Execute valist build & publish
