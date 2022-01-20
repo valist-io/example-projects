@@ -1,0 +1,4 @@
+name: test55/geth
+tag: 0.0.1
+artifacts:
+  darwin/arm64: dist/darwin-arm64/geth
