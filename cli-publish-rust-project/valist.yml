@@ -1,4 +1,0 @@
-name: acme-co/rust-example
-tag: 0.1.7
-artifacts:
-  hello: target/release/hello_cargo

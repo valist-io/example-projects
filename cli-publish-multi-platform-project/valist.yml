@@ -1,6 +1,0 @@
-name: acme-co/multi-platform-example
-tag: 0.0.4
-artifacts:
-  linux/amd64: dist/linux64
-  darwin/amd64: dist/darwin64
-  windows/amd64: dist/windows64

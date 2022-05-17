@@ -9,4 +9,4 @@ clean:
 	rm -rf dist
 
 publish: all
-	valist publish
+	valist publish acme-co/go-binary/0.0.1 dist/*

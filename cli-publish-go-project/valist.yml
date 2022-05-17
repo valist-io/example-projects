@@ -1,4 +1,0 @@
-name: acme-co/go-example
-tag: 0.1.9
-artifacts:
-  hello: dist/hello
