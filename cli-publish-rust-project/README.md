@@ -16,3 +16,9 @@ valist publish acme-co/rust-binary/0.0.1 dist/*
 ```
 
 Voila! The release is packaged and published to the designated path 🚀
+
+## View on Valist
+
+To view this project on Valist, navigate to the following link!
+
+<https://app.valist.io/acme-co/rust-binary>

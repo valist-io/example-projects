@@ -15,4 +15,4 @@ clean:
 	rm -rf dist
 
 publish: all
-	valist publish acme-co/go-binary/0.0.3 dist
+	valist publish acme-co/multi-platform/0.0.1 src dist
