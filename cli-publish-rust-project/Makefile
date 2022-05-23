@@ -9,4 +9,4 @@ clean:
 	rm -rf target
 
 publish: all
-	valist publish
+	valist publish acme-co/rust-binary/0.0.1 target

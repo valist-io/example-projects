@@ -1,4 +1,4 @@
-package adsfsa
+package main
 
 import "fmt"
 
