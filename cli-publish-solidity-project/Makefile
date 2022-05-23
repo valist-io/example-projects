@@ -12,4 +12,4 @@ clean:
 	rm -rf build
 
 publish: all
-	valist publish
+	valist publish acme-co/solidity/0.0.1 Hello.sol build

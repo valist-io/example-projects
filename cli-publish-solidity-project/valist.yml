@@ -1,6 +1,0 @@
-name: acme-co/solidity-example
-tag: 0.0.1
-artifacts:
-  sol: Hello.sol
-  abi: build/Hello_sol_Hello.abi
-  bin: build/Hello_sol_Hello.bin
