@@ -1,6 +1,6 @@
 {
   "name": "sdk-solidity",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Use this example to release Solidity sources and ABIs.",
   "main": "index.js",
   "scripts": {
