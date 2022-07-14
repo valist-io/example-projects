@@ -1,7 +1,7 @@
 account: acme-co
 project: multi-platform
-release: 0.0.5
-files: dist/*
+release: 0.0.9
+path: dist
 install:
   name: hello-go
   darwin_amd64: dist/hello-darwin-amd64
