@@ -8,7 +8,6 @@ To find more detailed documentation, please visit https://docs.valist.io
 
 ## Usage
 
-
 ### Configuring platform/architecture mappings
 
 In order to let the Valist clients know how to install your binaries, it needs to understand the mapping between binaries and their designated platform & architecture.

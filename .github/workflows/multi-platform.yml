@@ -1,0 +1,39 @@
+name: Valist Publish
+on:
+  push:
+    branches:
+      - main
+jobs:
+  valist-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '^1.13.1'
+
+      - name: Build multi-platform Go binary
+        run: |
+          cd multi-platform-project
+          make
+
+      - run: echo "TIMESTAMP=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
+      - name: Valist Publish
+        uses: valist-io/valist-github-action@v2.5.6
+        with:
+          private-key: ${{ secrets.VALIST_SIGNER }}
+          account: acme-co
+          project: multi-platform
+          release: github-action-${{ env.TIMESTAMP }}
+          path: multi-platform-project/dist
+
+          # configures installer support for mac, linux, and windows
+          install-name: hello-go
+          install-darwin-amd64: hello-darwin-amd64
+          install-darwin-arm64: hello-darwin-arm64
+          install-linux-amd64: hello-linux-amd64
+          install-windows-amd64: hello-windows-amd64

@@ -1,0 +1,10 @@
+account: acme-co
+project: multi-platform
+release: 0.1.4
+path: dist
+install:
+  name: hello-go
+  darwin_amd64: hello-darwin-amd64
+  darwin_arm64: hello-darwin-arm64
+  linux_amd64: hello-linux-amd64
+  windows_amd64: hello-windows-amd64
