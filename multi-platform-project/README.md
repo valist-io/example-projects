@@ -17,14 +17,14 @@ To configure this, you can setup the mapping in the `valist.yml` file at the roo
 ```yaml
 account: acme-co
 project: multi-platform
-release: 0.0.5
-files: dist/*
-install:
-  name: hello-go
-  darwin_amd64: dist/hello-darwin-amd64
-  darwin_arm64: dist/hello-darwin-arm64
-  linux_amd64: dist/hello-linux-amd64
-  windows_amd64: dist/hello-windows-amd64
+release: 0.2.13
+
+platforms:
+  web: dist/web
+  darwin_amd64: dist/darwin/amd64/hello-go
+  darwin_arm64: dist/linux/amd64/hello-go
+  linux_amd64: dist/linux/amd64/hello-go
+  windows_amd64: dist/windows/amd64/hello-go
 ```
 
 To publish this project, run the following:

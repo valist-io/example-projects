@@ -1,6 +1,6 @@
 account: acme-co
 project: multi-platform
-release: 0.2.12
+release: 0.2.13
 
 platforms:
   web: dist/web
