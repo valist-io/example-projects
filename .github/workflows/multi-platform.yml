@@ -32,8 +32,8 @@ jobs:
           release: github-action-${{ env.TIMESTAMP }}
 
           # configures platform support for web, mac, linux, and windows
-          platform-web: dist/web
-          platform-darwin-amd64: dist/darwin/amd64/hello-go
-          platform-darwin-arm64: dist/darwin/arm64/hello-go
-          platform-linux-amd64: dist/linux/amd64/hello-go
-          platform-windows-amd64: dist/windows/amd64/hello-go
+          platform-web: multi-platform-project/dist/web
+          platform-darwin-amd64: multi-platform-project/dist/darwin/amd64/hello-go
+          platform-darwin-arm64: multi-platform-project/dist/darwin/arm64/hello-go
+          platform-linux-amd64: multi-platform-project/dist/linux/amd64/hello-go
+          platform-windows-amd64: multi-platform-project/dist/windows/amd64/hello-go
