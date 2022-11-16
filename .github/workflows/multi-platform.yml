@@ -23,17 +23,17 @@ jobs:
       - run: echo "TIMESTAMP=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Valist Publish
-        uses: valist-io/valist-github-action@v2.5.6
+        uses: valist-io/valist-github-action@dev
         with:
           private-key: ${{ secrets.VALIST_SIGNER }}
+
           account: acme-co
           project: multi-platform
           release: github-action-${{ env.TIMESTAMP }}
-          path: multi-platform-project/dist
 
-          # configures installer support for mac, linux, and windows
-          install-name: hello-go
-          install-darwin-amd64: hello-darwin-amd64
-          install-darwin-arm64: hello-darwin-arm64
-          install-linux-amd64: hello-linux-amd64
-          install-windows-amd64: hello-windows-amd64
+          # configures platform support for web, mac, linux, and windows
+          platform-web: dist/web
+          platform-darwin-amd64: dist/darwin/amd64/hello-go
+          platform-darwin-arm64: dist/darwin/arm64/hello-go
+          platform-linux-amd64: dist/linux/amd64/hello-go
+          platform-windows-amd64: dist/windows/amd64/hello-go
