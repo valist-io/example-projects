@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 
-all: clean windows linux darwin
+all: windows linux darwin
 
 windows: 
 	GOOS=windows GOARCH=amd64 go build -o ./dist/windows/amd64/hello-go src/main.go
