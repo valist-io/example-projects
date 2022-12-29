@@ -28,7 +28,7 @@ jobs:
           private-key: ${{ secrets.VALIST_SIGNER }}
           rpc-url: "https://rpc.valist.io/mumbai"
 
-          account: acme-co
+          account: awantoch
           project: multi-platform
           release: gha-${{ env.TIMESTAMP }}
 
