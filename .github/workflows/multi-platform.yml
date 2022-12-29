@@ -23,13 +23,13 @@ jobs:
       - run: echo "TIMESTAMP=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Valist Publish
-        uses: valist-io/valist-github-action@dev
+        uses: valist-io/valist-github-action@v2
         with:
           private-key: ${{ secrets.VALIST_SIGNER }}
 
           account: acme-co
           project: multi-platform
-          release: github-action-${{ env.TIMESTAMP }}
+          release: gha-${{ env.TIMESTAMP }}
 
           # configures platform support for web, mac, linux, and windows
           platform-web: multi-platform-project/dist/web
