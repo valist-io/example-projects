@@ -23,12 +23,11 @@ jobs:
       - run: echo "TIMESTAMP=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
       - name: Valist Publish
-        uses: valist-io/valist-github-action@dev
+        uses: valist-io/valist-github-action@v2
         with:
           private-key: ${{ secrets.VALIST_SIGNER }}
-          rpc-url: "https://rpc.valist.io/mumbai"
 
-          account: awantoch
+          account: acme-co
           project: multi-platform
           release: gha-${{ env.TIMESTAMP }}
 
